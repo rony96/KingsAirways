@@ -8,7 +8,6 @@ export class Flightmodel {
    {
        this.from=from;
        this.to=to;
-     
    }
 
 

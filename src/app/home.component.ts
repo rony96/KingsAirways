@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
   model:Flightmodel;
+  date:string;
 
 flightlist: Flightmodel[];
 
@@ -20,10 +21,14 @@ flightlist: Flightmodel[];
      this.flightlist=[
         new Flightmodel("chennai","banglore"),
         new Flightmodel("banglore","chennai"),
-        new Flightmodel("mumbai","chennai"),
+        new Flightmodel("mumbai","madurai"),
         new Flightmodel("kolkata","pune")
     ];
   }
+  makedate() {
+    this.date = document.getElementById("d").nodeValue;
+  }
+  
 }
 
 
