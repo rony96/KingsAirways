@@ -15,14 +15,14 @@
           <div class="card text-white p-5 bg-primary">
             <div class="card-body">
               <h1 class="mb-4">Login form</h1>
-              <form action="https://formspree.io/YOUREMAILHERE">
+              <form action="userdashboard.component.html">
                 <div class="form-group">
                   <label>Email address</label>
                   <input type="email" class="form-control" placeholder="Enter email"> </div>
                 <div class="form-group">
                   <label>Password</label>
                   <input type="password" class="form-control" placeholder="Password"> </div>
-                <button type="submit" class="btn btn-secondary">Login</button>
+                <button type="submit" class="btn btn-secondary" (click)="login()">Login</button>
               </form>
             </div>
           </div>
