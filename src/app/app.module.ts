@@ -9,6 +9,7 @@ import {AdminModule} from './admin/admin.module';
 import { HeaderComponent } from './ui/header.component';
 import { FooterComponent } from './ui/footer.component';
 import { UserdashboardComponent } from './user/userdashboard.component';
+import { SearchDetailComponent } from './search-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UserdashboardComponent } from './user/userdashboard.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    UserdashboardComponent
+    UserdashboardComponent,
+    SearchDetailComponent
   ],
   imports: [
     BrowserModule, UserModule,AdminModule,

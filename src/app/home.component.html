@@ -18,7 +18,7 @@
               <datalist id = "d1"> 
                       <option *ngFor="let item of flightlist" (click)="model=item">{{item.from}}</option>
               </datalist>
-              <input type = "text" list = "d1"  class="form-control mr-3 my-1 form-control-lg" placeholder="from" id="inlineFormInputGroup"/>
+              <input type = "text" list = "d1"  class="form-control mr-3 my-1 form-control-lg" placeholder="From"/>
 
                 
                  <datalist id="d2">
@@ -26,8 +26,8 @@
                  </datalist>
              
               <input type="text" list="d2"  class="form-control mr-3 my-1 form-control-lg" placeholder="To" id="inlineFormInputGroup">
-              <input type="date" class="form-control mr-3 my-1 form-control-lg" placeholder="Date" id="inlineFormInputGroup"> </div>
-            <button type="submit" class="btn btn-secondary">Search</button>
+              <input type="date" class="form-control mr-3 my-1 form-control-lg" placeholder="Date" name = "date" ng-model = "date" value = "{{date | date:'dd/MM/yyyy'}}"/> </div>
+              <a class="btn btn-sm btn-info mr-4" [routerLink]="['/search', model.from, model.to]">Search </a> 
           </form>
         </div>
      
